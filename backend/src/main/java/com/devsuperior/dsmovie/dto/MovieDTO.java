@@ -1,6 +1,12 @@
 package com.devsuperior.dsmovie.dto;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.OneToMany;
+
 import com.devsuperior.dsmovie.entities.Movie;
+import com.devsuperior.dsmovie.entities.Score;
 
 public class MovieDTO {
 	private Long id;
@@ -67,6 +73,5 @@ public class MovieDTO {
 	public void setImage(String image) {
 		Image = image;
 	}
-	
 	
 }
